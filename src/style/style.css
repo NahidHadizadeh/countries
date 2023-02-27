@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+.padding-x-2 {
+  padding: 0 2rem;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Dark-Blue: hsl(209, 23%, 22%);
+  /* (Dark Mode Elements) */
+  --Very-Dark-Blue-BG: hsl(207, 26%, 17%);
+  /* (Dark Mode Background */
+  --Very-Dark-Blue-text: hsl(200, 15%, 8%);
+  /* (Light Mode Text) */
+  --Dark-Gray: hsl(0, 0%, 52%);
+  /* (Light Mode Input) */
+  --Very-Light: hsl(0, 0%, 98%);
+  /* (Light Mode Background) */
+  --White: hsl(0, 0%, 100%);
+  /* Dark Mode Text & Light Mode Elements) */
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+.color-text-white {
+  color: var(--White);
+}
+.bg-color-dark {
+  background-color: var(--Dark-Blue);
+}
+body {
+  font-family: Nunito Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: var(--Very-Light);
+  color: var(--Very-Dark-Blue-text);
+}
+.container-fluid {
+  padding: 0 5rem !important;
+}
+/* font-Weights: 300, 600, 800 */
+/* - Detail Page: 16px  */
+/* .rowOfCards { */
+/* justify-content: space-between !important; */
+/* gap: 3.2rem; */
+/* } */
+.parentElem {
+  width: 100%;
+}
+.dark-bg-elem {
+  background-color: var(--Dark-Blue) !important;
+}
+.dark-text-color {
+  color: var(--White) !important;
+}

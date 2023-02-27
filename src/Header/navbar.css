@@ -1,0 +1,19 @@
+.navbar {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  background: var(--White);
+}
+
+.modeBox {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-family: "Nunito Sans", sans-serif;
+}
+.dis-none {
+  display: none;
+}
+.dis-block {
+  display: block;
+}

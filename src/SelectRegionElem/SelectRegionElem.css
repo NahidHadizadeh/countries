@@ -1,0 +1,43 @@
+.selectBox {
+  width: 100%;
+  border: none;
+  border-radius: 0.375rem;
+  background: var(--White);
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.selectBox div {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  position: absolute;
+  z-index: 2;
+  top: 58px;
+  background: white;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  left: 0px;
+  border-radius: 0.375rem;
+  padding: 0;
+}
+ul li {
+  padding: 5px 1rem;
+  cursor: pointer;
+}
+ul li:hover {
+  background-color: #dfdfdf;
+}
+.dis-none {
+  display: none;
+}
+.dis-block {
+  display: block;
+}
+.filteringBox-icon {
+  transform: rotate(0deg);
+}
