@@ -17,7 +17,8 @@
 .dis-block {
   display: block;
 }
-@media (max-width:500px){
-.modeBox span{
-  display:none;
+@media (max-width: 500px) {
+  .modeBox span {
+    display: none;
+  }
 }
