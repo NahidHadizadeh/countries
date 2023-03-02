@@ -40,13 +40,13 @@ function App() {
             <div className="parentElem">
               <Container fluid-sm>
                 <Row className="pt-4 pb-4 justify-content-between">
-                  <div className="col-md-4 col-sm-5 col-12  px-0 ">
+                  <div className="col-md-4 col-sm-5 col-11  px-0 col-of-search ">
                     <InputElem
                       GetNameCountry={GetNameCountry}
                       ThemeMode={ThemeMode}
                     />
                   </div>
-                  <div className="col-md-4 col-xl-2 col-sm-6 col-12 pl-0 ">
+                  <div className="col-md-4 col-xl-2 col-sm-6 col-11 pl-0 col-of-search">
                     <SelectRegionElem
                       GetRegionName={GetRegionName}
                       ThemeMode={ThemeMode}
