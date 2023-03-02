@@ -53,7 +53,7 @@ function NavbarElem({ handleThemeMode }) {
   }
   return (
     <Navbar>
-      <Container fluid>
+      <Container fluid-sm>
         {/* <Navbar.Brand href="#">Where in the world?</Navbar.Brand> */}
         <Link className="navbar-brand" to={"/"}>
           Where in the world?
