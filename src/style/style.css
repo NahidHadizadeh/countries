@@ -60,3 +60,9 @@ body {
 .dark-text-color {
   color: var(--White) !important;
 }
+@media (max-width: 575px) {
+  .col-of-search {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
