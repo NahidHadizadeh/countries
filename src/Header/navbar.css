@@ -17,3 +17,7 @@
 .dis-block {
   display: block;
 }
+@media screen(width <375px){
+.modeBox span{
+  display:none;
+}
