@@ -27,28 +27,7 @@ function App() {
     }
     setThemeMode(e);
   }
-  // function ShowAndHiddRegionsList(RegionSelect) {
-  //   setTargetClickForShowUL(RegionSelect);
-  // }
-  // function ShowAndHide(e) {
-  //   console.log(e.target);
-  //   const ulElem = document.querySelector("ul");
-  //   // console.log("targetClickForShowUL", targetClickForShowUL);
-  //   // if (targetClickForShowUL === "") {
-  //   //   console.log("=");
-  //   //   setTargetClickForShowUL("");
-  //   // } else {
-  //   console.log("!=");
-  //   if (ulElem.classList[0].includes("dis-block")) {
-  //     console.log("ul block");
-  //     ulElem.classList.remove("dis-block");
-  //     ulElem.classList.add("dis-none");
-  //     document.querySelector(".arrow-down").classList.toggle("dis-none");
-  //     document.querySelector(".arrow-up").classList.toggle("dis-none");
-  //   }
-  //   // }
-  //   // console.log(document.querySelector("ul").classList[0]);
-  // }
+
 
   return (
     <>
@@ -59,7 +38,7 @@ function App() {
           path="/"
           element={
             <div className="parentElem">
-              <Container fluid>
+              <Container fluid-sm>
                 <Row className="pt-4 pb-4 justify-content-between">
                   <div className="col-md-4 col-sm-5 col-12  px-0 ">
                     <InputElem
