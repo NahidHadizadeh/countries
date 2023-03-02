@@ -27,3 +27,9 @@ input {
 .search-icon:hover {
   transform: scale(1.1, 1.1);
 }
+@media (max-width: 575px) {
+  .input-group
+ {
+    margin-left: 0;
+  }
+}
