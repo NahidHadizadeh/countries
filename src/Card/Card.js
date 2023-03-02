@@ -6,34 +6,38 @@ import { Link } from "react-router-dom";
 function CardElem({ RegionName, CountryName, ThemeMode }) {
   const [listCountry, setListCountry] = useState([]);
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
-      .then((res) => res.json())
-      .then((data) => {
-        setListCountry(data);
-        if (RegionName) {
-          let counrtys = data?.filter(
-            (country) => country.region === RegionName
-          );
+    try {
+      fetch("https://restcountries.com/v3.1/all")
+        .then((res) => res.json())
+        .then((data) => {
+          setListCountry(data);
+          if (RegionName) {
+            let counrtys = data?.filter(
+              (country) => country.region === RegionName
+            );
 
-          setListCountry(counrtys);
-        }
-        if (CountryName) {
-          let counrtys = data?.filter((country) =>
-            country?.name.common.includes(CountryName)
-          );
+            setListCountry(counrtys);
+          }
+          if (CountryName) {
+            let counrtys = data?.filter((country) =>
+              country?.name.common.includes(CountryName)
+            );
 
-          setListCountry(counrtys);
-        }
-        if (RegionName && CountryName) {
-          let counrtys = data?.filter(
-            (country) =>
-              country?.name.common.includes(CountryName) &&
-              country.region === RegionName
-          );
+            setListCountry(counrtys);
+          }
+          if (RegionName && CountryName) {
+            let counrtys = data?.filter(
+              (country) =>
+                country?.name.common.includes(CountryName) &&
+                country.region === RegionName
+            );
 
-          setListCountry(counrtys);
-        }
-      });
+            setListCountry(counrtys);
+          }
+        });
+    } catch (err) {
+      alert("error in get data: ", err);
+    }
   }, [RegionName, CountryName]);
 
   return listCountry.length ? (
