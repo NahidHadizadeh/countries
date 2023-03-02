@@ -39,7 +39,7 @@ function App() {
           element={
             <div className="parentElem">
               <Container fluid-sm>
-                <Row className="pt-4 pb-4 justify-content-between">
+                <Row className="pt-4 pb-4 justify-content-between pe-3">
                   <div className="col-md-4 col-sm-5 col-11  px-0 col-of-search ">
                     <InputElem
                       GetNameCountry={GetNameCountry}
